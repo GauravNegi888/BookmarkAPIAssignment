@@ -1,0 +1,17 @@
+node_modules/
+.env
+.env.*
+!.env.example
+
+generated/
+
+.DS_Store
+*.log
+
+.vscode/
+.idea/
+
+.agents/
+.claude/
+.windsurf/
+skills-lock.json

@@ -1,0 +1,32 @@
+{
+  "name": "bookmark-manager-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "module": "src/server.ts",
+  "scripts": {
+    "dev": "bun run src/server.ts",
+    "start": "bun run src/server.ts",
+    "test": "bun test",
+    "typecheck": "bunx tsc --noEmit",
+    "prisma:generate": "bunx --bun prisma generate",
+    "prisma:migrate": "bunx --bun prisma migrate dev",
+    "prisma:deploy": "bunx --bun prisma migrate deploy"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/pg": "^8.23.1",
+    "prisma": "^7.9.1"
+  },
+  "dependencies": {
+    "@prisma/adapter-pg": "^7.9.1",
+    "@prisma/client": "^7.9.1",
+    "dotenv": "^17.4.2",
+    "graphql": "^17.0.2",
+    "graphql-yoga": "^5.22.0",
+    "pg": "^8.23.0"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  }
+}
